@@ -20,5 +20,17 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        \App\Models\User::create([
+            'name' => 'Ahmad Muzayyin',
+            'email' => 'admin@gmail.com',
+            'password' => bcrypt('12345'),
+            'isAdmin' => 'admin'
+        ]);
+        \App\Models\User::create([
+            'name' => 'Ahmad Muzayyin',
+            'email' => 'pimpinan@gmail.com',
+            'password' => bcrypt('12345'),
+            'isAdmin' => 'pimpinan'
+        ]);
     }
 }

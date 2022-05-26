@@ -9,104 +9,19 @@
     <!--start breadcrumb-->
     <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
       <div class="breadcrumb-title pe-3">Dashboard</div>
+      <div class="ps-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 p-0 align-items-center">
+            <li class="breadcrumb-item"><a href="{{ url('/dashboard') }}">
+                <ion-icon name="home-outline"></ion-icon>
+              </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Jamaah</li>
+          </ol>
+        </nav>
+      </div>
     </div>
     <!--end breadcrumb-->
-
-    <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-4">
-      <div class="col">
-        <div class="card radius-10">
-          <div class="card-body">
-            <div class="d-flex align-items-center gap-2">
-              <div class="fs-5">
-                <ion-icon name="person-add-outline"></ion-icon>
-              </div>
-              <div>
-                <p class="mb-0">Followers</p>
-              </div>
-              <div class="fs-5 ms-auto">
-                <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
-              </div>
-            </div>
-            <div class="d-flex align-items-center mt-3">
-              <div>
-                <h5 class="mb-0">1,037</h5>
-              </div>
-              <div class="ms-auto" id="chart1"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card radius-10">
-          <div class="card-body">
-            <div class="d-flex align-items-center gap-2">
-              <div class="fs-5">
-                <ion-icon name="heart-outline"></ion-icon>
-              </div>
-              <div>
-                <p class="mb-0">Likes</p>
-              </div>
-              <div class="fs-5 ms-auto">
-                <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
-              </div>
-            </div>
-            <div class="d-flex align-items-center mt-3">
-              <div>
-                <h5 class="mb-0">23,758</h5>
-              </div>
-              <div class="ms-auto" id="chart2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card radius-10">
-          <div class="card-body">
-            <div class="d-flex align-items-center gap-2">
-              <div class="fs-5">
-                <ion-icon name="chatbox-outline"></ion-icon>
-              </div>
-              <div>
-                <p class="mb-0">Comments</p>
-              </div>
-              <div class="fs-5 ms-auto">
-                <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
-              </div>
-            </div>
-            <div class="d-flex align-items-center mt-3">
-              <div>
-                <h5 class="mb-0">1,139</h5>
-              </div>
-              <div class="ms-auto" id="chart3"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card radius-10">
-          <div class="card-body">
-            <div class="d-flex align-items-center gap-2">
-              <div class="fs-5">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-              <div>
-                <p class="mb-0">Messages</p>
-              </div>
-              <div class="fs-5 ms-auto">
-                <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
-              </div>
-            </div>
-            <div class="d-flex align-items-center mt-3">
-              <div>
-                <h5 class="mb-0">1,037</h5>
-              </div>
-              <div class="ms-auto" id="chart4"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--end row-->
 
     <div class="card radius-10 w-100">
       <div class="card-body">
@@ -328,19 +243,3 @@
 </div>
 <!--end page content wrapper-->
 @endsection
-@push('script')
-<script>
-  function round_error_noti() {
-    Lobibox.notify('error', {
-      pauseDelayOnHover: true,
-      size: 'mini',
-      rounded: true,
-      delayIndicator: false,
-      icon: 'bx bx-x-circle',
-      continueDelayOnInactiveTab: false,
-      position: 'top right',
-      msg: 'Lorem ipsum dolor sit amet hears farmer indemnity inherent.'
-    });
-  }
-</script>
-@endpush

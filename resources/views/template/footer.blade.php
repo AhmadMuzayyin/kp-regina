@@ -9,10 +9,11 @@
 <script src="{{ url('assets/plugins/apexcharts-bundle/js/apexcharts.min.js') }}"></script>
 <script src="{{ url('assets/plugins/chartjs/chart.min.js') }}"></script>
 <script src="{{ url('assets/js/index.js') }}"></script>
+<script src="{{ url('assets/toastr/toastr.min.js') }}"></script>
 <!-- Main JS-->
 <script src="{{ url('assets/js/main.js') }}"></script>
-
-
+@stack('script')
+@toastr_render
 </body>
 
 </html>
